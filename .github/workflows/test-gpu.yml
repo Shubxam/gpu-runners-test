@@ -8,4 +8,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: carryout speedtest
-      run: networkQuality -s
+      run: |
+        networkQuality -s
+        system_profiler SPStorageDataType SPHardwareDataType SPSoftwareDataType
