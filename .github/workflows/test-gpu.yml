@@ -7,7 +7,7 @@ jobs:
   run-script:
     runs-on: macos-latest
     steps:
-    - name: carryout speedtest
+    - name: system info commands
       run: |
         networkQuality -s
-        system_profiler SPStorageDataType SPHardwareDataType SPSoftwareDataType
+        system_profiler SPStorageDataType SPHardwareDataType SPSoftwareDataType SPDisplaysDataType
