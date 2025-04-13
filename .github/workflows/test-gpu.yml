@@ -1,14 +1,11 @@
-name: test gpu runner
+name: test macos runner
 
 on: 
     workflow_dispatch:
 
 jobs:
   run-script:
-    runs-on:
-      group: tj-runner-group
-      labels: tj-runners
+    runs-on: macos-latest
     steps:
-    - name: Run nvidia smi
-      run: |
-        nvidia-smi
+    - name: carryout speedtest
+      run: networkQuality -s
