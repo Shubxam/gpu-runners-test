@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: system info commands
       run: |
-        system_profiler SPStorageDataType SPHardwareDataType SPSoftwareDataType SPDisplaysDataType
+        system_profiler SPDisplaysDataType SPStorageDataType SPHardwareDataType SPSoftwareDataType 
